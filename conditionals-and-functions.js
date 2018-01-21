@@ -36,11 +36,49 @@ let lessThanEq = 4 <= 9;
 let notEquals = 5 !== 2;
 */
 
-
+/*
 let storeA = 3.10;
 let storeB = 4.40;
 
 let storeAIsLower = storeA < storeB;
 console.log(storeAIsLower);
+*/
 
-stop video at 6:02
+/* An if block is a control statement. The conditional helps us get more out of our code. An if block is a control statement. It is a block of code that allows us to control the flow through our program. We can use the if statement with an ifelse statement to create an if - elseif conditional. Additionally, we can also make an if, elseif, else statement that will provide an either a or b or neither.
+ */
+/*
+let storeA = 4.40;
+let storeB = 4.40;
+
+let storeAIsLower = storeA < storeB;
+if (storeAIsLower) {
+	console.log("Store A has a lower price.");
+}	else if (storeB < storeA) {
+	console.log("Store B has a lower price.");
+}
+else {
+	console.log("The price at Store A is the same price as Store B");
+}
+*/
+
+/* A conditional is good if you only need to use the if, elseif, if statement once. If you need to use the conditional code in several places in your code or in code across several files we should use functions. Functions are a way to encapsulate our code in a way that is reuseable. It is similar to an if block but it is named. Imagine functions like variables that contain code. Functions have two main features which are parameters and the code they execute. Parameters allow us to pass variables into our code, we need this in order to do scope. Passing parameters also lets us know wherre the parameters are comming from. In order to run a function, we need to call it by its name followed by paranthesis. Inside the paranthesis we pass the value. The values are in order. When we call it the value order will be assigned to the variable in sequential order
+
+
+ */
+
+
+let storeA = 1.40;
+let storeB = 3.40;
+
+function compareStorePrices (storeA, storeB) {
+	let storeAIsLower = storeA < storeB;
+	if(storeAIsLower) {
+		console.log("Store A has a lower price.");
+	} else if(storeB < storeA) {
+		console.log("Store B has a lower price.");
+	} else {
+		console.log("The price at Store A is the same price as Store B");
+	}
+}
+
+compareStorePrices(10,5);
