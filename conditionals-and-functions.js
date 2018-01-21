@@ -61,11 +61,8 @@ else {
 }
 */
 
-/* A conditional is good if you only need to use the if, elseif, if statement once. If you need to use the conditional code in several places in your code or in code across several files we should use functions. Functions are a way to encapsulate our code in a way that is reuseable. It is similar to an if block but it is named. Imagine functions like variables that contain code. Functions have two main features which are parameters and the code they execute. Parameters allow us to pass variables into our code, we need this in order to do scope. Passing parameters also lets us know wherre the parameters are comming from. In order to run a function, we need to call it by its name followed by paranthesis. Inside the paranthesis we pass the value. The values are in order. When we call it the value order will be assigned to the variable in sequential order
-
-
+/* A conditional is good if you only need to use the if, elseif, if statement once. If you need to use the conditional code in several places in your code or in code across several files we should use functions. Functions are a way to encapsulate our code in a way that is reuseable. It is similar to an if block but it is named. Imagine functions like variables that contain code. Functions have two main features which are parameters and the code they execute. Parameters allow us to pass variables into our code, we need this in order to do scope. Passing parameters also lets us know wherre the parameters are comming from. In order to run a function, we need to call it by its name followed by paranthesis. Inside the paranthesis we pass the value. The values are in order. When we call it the value order will be assigned to the variable in sequential order. We can call the code multiple times. In this example we add
  */
-
 
 let storeA = 1.40;
 let storeB = 3.40;
@@ -82,3 +79,5 @@ function compareStorePrices (storeA, storeB) {
 }
 
 compareStorePrices(10,5);
+compareStorePrices(5,10);
+compareStorePrices(10,10);
