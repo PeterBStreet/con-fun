@@ -40,5 +40,5 @@ let notEquals = 5 !== 2;
 let storeA = 3.10;
 let storeB = 4.40;
 
-let storeAIsLower = storeA < storeb;
-Console.log(storeAIsLower);
+let storeAIsLower = storeA < storeB;
+console.log(storeAIsLower);
