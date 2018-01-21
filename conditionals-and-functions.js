@@ -42,3 +42,5 @@ let storeB = 4.40;
 
 let storeAIsLower = storeA < storeB;
 console.log(storeAIsLower);
+
+stop video at 6:02
