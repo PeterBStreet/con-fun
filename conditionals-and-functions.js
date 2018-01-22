@@ -61,12 +61,9 @@ else {
 }
 */
 
-/* A conditional is good if you only need to use the if, elseif, if statement once. If you need to use the conditional code in several places in your code or in code across several files we should use functions. Functions are a way to encapsulate our code in a way that is reuseable. It is similar to an if block but it is named. Imagine functions like variables that contain code. Functions have two main features which are parameters and the code they execute. Parameters allow us to pass variables into our code, we need this in order to do scope. Passing parameters also lets us know wherre the parameters are comming from. In order to run a function, we need to call it by its name followed by paranthesis. Inside the paranthesis we pass the value. The values are in order. When we call it the value order will be assigned to the variable in sequential order. We can call the code multiple times. In this example we add
+/* A conditional is good if you only need to use the if, elseif, if statement once. If you need to use the conditional code in several places in your code or in code across several files we should use functions. Functions are a way to encapsulate our code in a way that is reuseable. It is similar to an if block but it is named. Imagine functions like variables that contain code. Functions have two main features which are parameters and the code they execute. Parameters allow us to pass variables into our code, we need this in order to do scope. Passing parameters also lets us know wherre the parameters are comming from. In order to run a function, we need to call it by its name followed by paranthesis. Inside the paranthesis we pass the value. The values are in order. When we call it the value order will be assigned to the variable in sequential order. We can call the code multiple times. In this example we add additional compareStorePrices to call the function multiple times.
  */
-
-let storeA = 1.40;
-let storeB = 3.40;
-
+/*
 function compareStorePrices (storeA, storeB) {
 	let storeAIsLower = storeA < storeB;
 	if(storeAIsLower) {
@@ -81,3 +78,62 @@ function compareStorePrices (storeA, storeB) {
 compareStorePrices(10,5);
 compareStorePrices(5,10);
 compareStorePrices(10,10);
+*/
+
+/* Functions can also give us values. To have a function give us a value we need a return statement stop at 1240
+*/
+
+/*
+function squareNum (number) {
+	return number * number;
+}
+
+let squaredNumber = squareNum(7);
+console.log (squaredNumber);
+*/
+/* JavaScript has three leveles of scope. Global, function, and block
+
+ */
+/*
+let x = 10;
+
+function addNumbers (n, m, x) {
+	console.log(x);
+	let b;
+	if (1===1) {
+		let b=8
+	}
+	console.log(b);
+	return n+m;
+}
+ */
+/*
+let ourArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ['a', 'b', 'c']];
+
+let newArr = ourArray[10];
+console.log(ourArray);
+console.log(ourArray[9]);
+console.log(newArr[1]);
+ */
+
+/* There are three elements of for loops (counter, comparison, and incrementer)
+ */
+
+/*
+let ourArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ['a', 'b', 'c']];
+	let arrLen = ourArray.length;
+	for(let i = 0; i<arrLen; i++) {
+//	for(let i = 0; i<ourArray.length; i++) {
+// for(let i = 3; i<9; i++) {
+		console.log(ourArray[i]);
+		for(let j = 0; j < 10; j++) {
+//	console.log("i is equal to: " +i);
+			console.log('j is equal to: ' + j);
+		}
+	}
+	*/
+let x = 0;
+while (x<10) {
+	console.log('ran');
+	x = x +1;
+}
